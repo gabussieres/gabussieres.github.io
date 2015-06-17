@@ -1,0 +1,171 @@
+/* This applies to a screen of any width */
+
+/* LAYOUT */
+/* Some typography */
+
+body {
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+header, footer {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
+}
+
+.side, .middle {
+    margin: 5px;
+    padding: 12px;
+    width: auto;
+}
+
+header {
+    margin: 0px;
+    padding: 5px;
+}
+
+.middle, section {
+    border-width: 5px;
+}
+
+.middle {
+    border-color: #B3A78E;
+}
+
+section {
+    
+    padding: 5px 50px 5px 50px;
+    margin-bottom: 10px;
+}
+
+#csc, #matsta {
+    float: left;
+    width: 50%;
+}
+
+footer p {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* TYPOGRAPHY */
+
+a {
+    color: #527ACC;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* This applies to screens with a minimum width of 1240px */
+
+@media screen and (min-width: 1240px) {
+    
+    /* LAYOUT */
+    
+    nav, aside, footer {
+        position: fixed;
+    }
+    
+    article {
+        position: absolute;
+        left: 15%;
+    }
+    
+    aside {
+        right: 0%;
+    }
+    
+    footer {
+        bottom: 0;
+        left: 0.75%;
+        width: 100%;
+        background-color: #FFFFFF;
+        padding-bottom: 0;
+    }
+    
+    nav, aside {
+        width: 15%;
+    }
+    
+    nav li {
+        padding-top: 15px;
+    }
+    
+    article {
+        width: 70%;
+    }
+    
+    aside img {
+        width: 160px;  
+        border-radius: 5px;
+    }
+    
+    aside {
+        text-align: center;
+    }
+    
+    footer {
+        clear: both;
+    }
+
+    /* TYPOGRAPHY */
+    
+    aside p, aside a {
+        font-size: 12px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #000000;
+    }
+    
+    #c {
+        visibility: hidden;
+    }
+    
+}
+
+/* This applies to screens with a maximum width of 980px */
+
+@media screen and (max-width: 980px) {
+    
+    /* LAYOUT */
+    
+    nav > div {
+        overflow: hidden;
+    }
+    
+    nav li {
+        display: inline;
+        padding-left: 1%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+        float: left;
+    }
+    
+    .side, section > h2, h3 {
+        text-align: center;
+    }
+    
+    aside img {
+        width: 0px;
+    }
+    
+    h4 {
+        margin-top: 4px;
+    }
+    
+    /* TYPOGRAPHY */
+    
+    section > h2 {
+        text-decoration: underline;
+    }
+}
