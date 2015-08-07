@@ -6,3 +6,7 @@
 .sidebar {
     position: fixed;
 }
+
+#footer {
+    font-size: 10px;
+}
