@@ -3,12 +3,14 @@
         <title>Gabriel Bussieres</title>
         <meta name="description" content="Gabriel Bussieres' Online Resume."/>
         <meta name="author" content="Gabriel Bussieres"/>
-        <meta name="revised" content="January 12th, 2016"/>
+        <meta name="revised" content="January 14th, 2016"/>
         <meta name="language" content="EN"/>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
         <link href="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/p480x480/1002268_10151648637684098_1756845629_n.jpg?oh=af4ddb5c330881926c02acd1a5a31a21&oe=5608E004" type="image/gif" rel="shortcut icon"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link href="resume.css" type="text/css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -22,10 +24,10 @@
             <div class="row" id="content">
 
                 <!-- Sidebar -->
-                <div class="col-md-3" >
+                <div class="col-md-3">
                     <div class="row"></div>
 
-                    <!-- Actual sidebar -->
+                    <!-- Sidebar content -->
                     <div class="row sidebar">
 
                         <!-- Contact info -->
@@ -35,7 +37,7 @@
                             Mobile: &#40;519&#41; 532 6482<br/>
                             <a href="mailto:gab.bussieres@mail.utoronto.ca">Gab.Bussieres@mail.utoronto.ca</a><br/>
                             <br/>
-                            <a href="CS_CV.pdf">Resume</a><br/>
+                            <a href="PDFs/CS_CV.pdf">Resume</a><br/>
                             <a href="https://ca.linkedin.com/pub/gabriel-bussieres/a8/816/633">LinkedIn</a><br/>
                             <a href="https://github.com/gabussieres">GitHub</a>
                         </address>
@@ -56,7 +58,7 @@
                         <hr/>
                         <span id="footer">
                             &copy; Gabriel Bussieres<br/>
-                            Updated January 12th, 2016
+                            Updated January 14th, 2016
                         </span>
                     </div>
                 </div>
@@ -82,7 +84,7 @@
                             <hr/>
                         </div>
                     </div>
-
+                    
                     <!-- Education -->
                     <a name="education"></a>
                     <div class="row">
@@ -160,7 +162,10 @@
 
                             <div class="media">
                                 <div class="media-left">
-                                    <span class="glyphicon glyphicon-certificate" aria-hidden="true" ></span>
+                                    <a>
+                                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="modal" 
+                                              data-target="#myModal"></span>
+                                    </a>
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">CSC318 - The Design of Interactive Computational Media</h4>
@@ -192,10 +197,40 @@
                                 </div>
                                 <div class="media-body">
                                     <h4 class="media-heading">CSC207 - Software Design</h4>
-                                    Developed an Android application in a team of four, using Java and XML, oriented towards the prioritization and the registration of patients at a hospital. The app stored patients in a txt file, ranked patients by priority and allowed modification of their data.
+                                    Developed an Android application in a team of four, using Java and XML, oriented towards the prioritization and the registration of patients at a hospital. The app stored patients in a .txt file, ranked patients by priority and allowed modification of their data.
                                 </div>
                             </div>
 
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">CSC318 - The Design of Interactive Computational Media</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <a href="PDFs/Abstract.pdf">View Abstract</a>
+                                            <hr/>
+                                            <img src="Pictures/Home.jpg"/>
+                                            <hr/>
+                                            <img src="Pictures/Choice.jpg"/>
+                                            <hr/>
+                                            <img src="Pictures/List.jpg"/>
+                                            <hr/>
+                                            <img src="Pictures/Details.jpg"/>
+                                            <hr/>
+                                            <img src="Pictures/Print.jpg"/>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <hr/>
                         </div>
                     </div>
@@ -239,10 +274,10 @@
                                 <br/>
                                 <dt>Other</dt>
                                 <dd>
-                                    PSY280 - Sensation an Perception
+                                    PSY280 - Sensation an Perception*<br/>
                                     PSY270 - Introduction to Cognitive Psychology<br/>
                                     PSY260 - Learning and Plasticity<br/>
-                                    LIN200 - Introduction to Language<br/>
+                                    LIN200 - Introduction to Language*<br/>
                                     PSY100 - Introductory Psychology<br/>
                                     SPA100 - Spanish for Beginners<br/>
                                 </dd>
@@ -263,7 +298,7 @@
                             <dl class="dl-horizontal">
                                 <dt>Programming Languages</dt>
                                 <dd>
-                                    Java, Python, C#, C, Racket, Haskell<br/>
+                                    Java, Python, C#, C, Racket, Haskell, Assembly<br/>
                                 </dd>
                                 <dt>Databases</dt>
                                 <dd>
@@ -283,7 +318,7 @@
                                 </dd>
                                 <dt>CS Related</dt>
                                 <dd>
-                                    MATLAB, Unity3D, UML, Verilog, Data Structures, Algorithms, Assembly<br/><br/>
+                                    MATLAB, Unity3D, UML, Verilog, Data Structures, Algorithms<br/><br/>
                                 </dd>
 
                                 <dt>Spoken Languages</dt>
