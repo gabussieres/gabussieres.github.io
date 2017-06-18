@@ -3,7 +3,7 @@
         <title>Gabriel Bussieres</title>
         <meta name="description" content="Gabriel Bussieres' Online Resume."/>
         <meta name="author" content="Gabriel Bussieres"/>
-        <meta name="revised" content="June 5th, 2017"/>
+        <meta name="revised" id="head-updated-at"/>
         <meta name="language" content="EN"/>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
         <link href="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/p480x480/1002268_10151648637684098_1756845629_n.jpg?oh=af4ddb5c330881926c02acd1a5a31a21&oe=5608E004" type="image/gif" rel="shortcut icon"/>
@@ -11,6 +11,7 @@
         <link href="style.css" type="text/css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -34,12 +35,12 @@
                         <h3>Contact Info</h3>
                         <address>
                             <strong>Gabriel Bussieres</strong><br/>
-                            Mobile: &#40;519&#41; 532 6482<br/>
-                            <a href="mailto:gab.bussieres@mail.utoronto.ca">Gab.Bussieres@mail.utoronto.ca</a><br/>
+                            Mobile: &#40;416&#41; 887 5235<br/>
+                            <a href="mailto:gab.bussieres@mail.utoronto.ca">gab.bussieres [at] gmail [dot] com</a><br/>
                             <br/>
-                            <a href="assets/pdf/CS_CV.pdf">Resume</a><br/>
-                            <a href="https://ca.linkedin.com/pub/gabriel-bussieres/a8/816/633">LinkedIn</a><br/>
-                            <a href="https://github.com/gabussieres">GitHub</a>
+                            <a href="assets/pdf/CS_CV.pdf" target="_blank">Resume (outdated)</a><br/>
+                            <a href="https://ca.linkedin.com/pub/gabriel-bussieres/a8/816/633" target="_blank">LinkedIn</a><br/>
+                            <a href="https://github.com/gabussieres" target="_blank">GitHub</a>
                         </address>
 
                         <!-- Navigation -->
@@ -58,7 +59,7 @@
                         <hr/>
                         <span id="footer">
                             &copy; Gabriel Bussieres<br/>
-                            Updated March 31st, 2016
+                            Updated <span id="sidebar-updated-at"></span>
                         </span>
                     </div>
                 </div>
@@ -68,328 +69,36 @@
 
                     <!-- Biography -->
                     <a name="bio"></a>
-                    <div class="row">
-                        <div class="col-md-11">
-
-                            <h2>Biography</h2>
-
-                                <p>I am a third year undergraduate student at the University of Toronto, pursuing a Specialist in Computer Science and a Minor in Psychology. My goal is to complete a focus in either Human-Computer Interaction or Game Design. I grew up in Woodstock, Ontario and was educated in a French school system. At Ecole Secondaire Notre Dame &#40;secondary school&#41;, I participated in the High Skills Major in Non-profit services, as well as the student government where I took the role of Minister of Finance and Secretary. My admiration for mathematics and programming led to my studies in Computer Science.</p>
-                                <blockquote>
-                                    <p>Gabriel exhibited on many occasions, the ability to work collaboratively with other students during class projects, school activities and community events. For example, he played a significant role in the organization of two city-wide junior high dances that were held at ESND. As well, he assumed a leadership role during classroom collaborative assignments, often as the problem-solver of the group.</p>
-                                    <cite>Kimberly Fortin, former vice-principal of Ecole Secondaire Notre Dame.</cite>
-                                </blockquote>
-
-                                <h4>Current Objective</h4>
-                                <p>An internship or summer work experience in a computer science related field. Eager to learn new concepts, strategies, and programming languages in an enriching work environment. Interested in applying acquired knowledge to real world situations. Any equivalent options would provide growth and development in my field of interest.</p>
-                            <hr/>
-                        </div>
-                    </div>
+                    <div class="row" id="biography-section"></div>
                     
                     <!-- Education -->
                     <a name="education"></a>
-                    <div class="row">
-                        <div class="col-md-11">
-
-                            <h2>Education</h2>
-
-                            <dl class="dl-horizontal">
-                                <dt>2013-Present:</dt>
-                                <dd>
-                                    <strong>University of Toronto, Falculty of Arts and Science. Victoria College.</strong>
-                                    <br/>
-                                    Honours Bachelor of Science, Third Year.
-                                    <br/>
-                                    Computer Science Specialist, Psychology Minor
-                                </dd>
-                                <dt>2009-2013:</dt>
-                                <dd>
-                                    <strong>Ecole Secondaire Notre Dame (Secondary School). Woodstock, Ontario.</strong>
-                                    <br/>
-                                    Clubs &amp; Committees:
-                                    <ul>
-                                        <li>Student Council - Minister of Finance, Secretary</li>
-                                        <li>High Skills Major in Non-profit</li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                            <hr/>
-                        </div>
-                    </div>
+                    <div class="row" id="education-section"></div>
 
                     <!-- Projects -->
                     <a name="projects"></a>
-                    <div class="row">
-                        <div class="col-md-11">
-
-                            <h2>Projects</h2>
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="http://news.utoronto.ca/what-they-did-their-summer-vacation-virtual-underwater-exploration-statue-tweets">
-                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true" ></span>
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Interactive Museum Exhibits</h4>
-                                    <ul>
-                                        <li>Invited to work with Steve Engels, a senior lecturer at the University of Toronto, to integrate new technology into the Royal Ontario Museum.
-                                        <li>Developed a photo booth with a partner using a Kinect V1 Sensor and Unity3D.
-                                        <li>Wrote scripts in C#. Functionalities implemented include changing outfits, changing the background, saving photos, and sending those photos to museum visitors via email.
-                                        <li>Communicated weekly with Engels for brainstorming. Presented our work every month to employees at the Royal Ontario Museum, including the CEO and the project manager.
-                                        <li>The Royal Ontario Museum has decided to continue working with our group and offered to demo our projects in exhibits and events.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <h3>Personal Projects</h3>
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="https://github.com/gabussieres/Ornacia">
-                                        <span class="glyphicon glyphicon-link" aria-hidden="true" ></span>
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Ornacia</h4>
-                                    Created a video game about a jellyfish searching for plankton and avoiding predators. Functionalities include swimming mechanics, power-ups which diminish the user’s hunger, and decreased lighting over the depletion of hunger. The scripts are written in C# and was made using Unity3D.
-                                </div>
-                            </div>
-
-                            <h3>School Projects</h3>
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a>
-                                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="modal" 
-                                              data-target="#myModal"></span>
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">CSC318 - The Design of Interactive Computational Media</h4>
-                                    Conducted research, interpreted data, made sketches, created a prototype, and conducted usability tests with four other students in order to create software which connects the homeless with the organizations that provide resources for them.
-                                </div>
-
-                                <div class="media-left">
-                                    <span class="glyphicon glyphicon-certificate" aria-hidden="true" ></span>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">CSC309 - Programming on the Web</h4>
-                                    Collaborated with a team of four on a sharing economy website where users can act as a deliverer or a receiver. A receiver can post delivery requests, which can be accepted by deliverers in the area. We built the web app using Python and Django as our framework.
-                                </div>
-                            </div>
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="https://www.youtube.com/watch?v=iHukkZ_z2hU">
-                                        <span class="glyphicon glyphicon-facetime-video" aria-hidden="true" ></span>
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">CSC258 - Computer Organization</h4>
-                                    Created, tested, and debugged a single-player pong game made entirely through VGA, written in Verilog. Presented by teammate Alex Bath.
-                                </div>
-
-                                <div class="media-left">
-                                    <span class="glyphicon glyphicon-certificate" aria-hidden="true" ></span>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">CSC207 - Software Design</h4>
-                                    Developed an Android application in a team of four, using Java and XML, oriented towards the prioritization and the registration of patients at a hospital. The app stored patients in a .txt file, ranked patients by priority and allowed modification of their data.
-                                </div>
-                            </div>
-
-                            <!-- Modal -->
-                            <div id="myModal" class="modal fade" role="dialog">
-                                <div class="modal-dialog">
-                                    
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">CSC318 - The Design of Interactive Computational Media</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <a href="assets/pdf/Abstract.pdf">View Abstract</a>
-                                            <hr/>
-                                            <img src="assets/images/home.jpg"/>
-                                            <hr/>
-                                            <img src="assets/images/choice.jpg"/>
-                                            <hr/>
-                                            <img src="assets/images/list.jpg"/>
-                                            <hr/>
-                                            <img src="assets/images/details.jpg"/>
-                                            <hr/>
-                                            <img src="assets/images/print.jpg"/>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <hr/>
-                        </div>
-                    </div>
+                    <div class="row" id="projects-section"></div>
 
                     <!-- Courses -->
                     <a name="courses"></a>
-                    <div class="row">
+                    <div class="row" id="courses-section"></div>
 
-                        <div class="col-md-11">
-                            <h2>Courses</h2>
-
-                            <dl class="dl-horizontal">
-                                <dt>Computer Science</dt>
-                                <dd>
-                                    CSC401 - Natural Language Computing*<br/>
-                                    CSC384 - Introduction to Artificial Intelligence*<br/>
-                                    CSC373 - Algorithm Design &amp; Analysis<br/>
-                                    CSC343 - Introduction to Databases<br/>
-                                    CSC324 - Principles of Programming Languages<br/>
-                                    CSC321 - Introduction to Neural Networks and Machine Learning*<br/>
-                                    CSC318 - The Design of Interactive Computational Media<br/>
-                                    CSC309 - Programming on the Web<br/>
-                                    CSC263 - Data Structures &amp; Analysis<br/>
-                                    CSC258 - Computer Organization<br/>
-                                    CSC236 - Theory of Computation<br/>
-                                    CSC209 - Software Tools &amp; Systems Programming<br/>
-                                    CSC207 - Software Design<br/>
-                                </dd>
-                                <br/>
-                                <dt>Statistics</dt>
-                                <dd>
-                                    STA247 - Probability with Computer Applications<br/>
-                                    PSY201 - Statistics I<br/>
-                                </dd>
-                                <br/>
-                                <dt>Mathematics</dt>
-                                <dd>
-                                    MAT221 - Applied Linear Algebra<br/>
-                                    MAT135/136 - Calculus I<br/>
-                                </dd>
-                                <br/>
-                                <dt>Other</dt>
-                                <dd>
-                                    PSY280 - Sensation an Perception*<br/>
-                                    PSY270 - Introduction to Cognitive Psychology<br/>
-                                    PSY260 - Learning and Plasticity<br/>
-                                    LIN200 - Introduction to Language*<br/>
-                                    PSY100 - Introductory Psychology<br/>
-                                    SPA100 - Spanish for Beginners<br/>
-                                </dd>
-                            </dl>
-
-                            <p>* = In Progress</p>
-                            <hr/>
-                        </div>
-                    </div>
-
-                     <!-- Skills -->
+                    <!-- Skills -->
                     <a name="skills"></a>
-                    <div class="row">
-                        <div class="col-md-11">
-
-                            <h2>Skills</h2>
-
-                            <dl class="dl-horizontal">
-                                <dt>Programming Languages</dt>
-                                <dd>
-                                    Java, Python, C#, C, Racket, Haskell, Assembly<br/>
-                                </dd>
-                                <dt>Databases</dt>
-                                <dd>
-                                    SQL, XQuery, MongoDB, Relational Databases, XML<br/>
-                                </dd>
-                                <dt>Web</dt>
-                                <dd>
-                                    HTML &amp; CSS, Bootstrap, JavaScript, JQuery, Django<br/>
-                                </dd>
-                                <dt>Version Control</dt>
-                                <dd>
-                                    Git, Subversion<br/>
-                                </dd>
-                                <dt>Operating Systems</dt>
-                                <dd>
-                                    Windows, OS X, Linux<br/>
-                                </dd>
-                                <dt>CS Related</dt>
-                                <dd>
-                                    MATLAB, Unity3D, UML, Verilog, Data Structures, Algorithms<br/><br/>
-                                </dd>
-
-                                <dt>Spoken Languages</dt>
-                                <dd>
-                                    Fluent English and French communication skills, including oral and written.<br/>
-                                    Basic Spanish.<br/><br/>
-                                </dd>
-
-                                <dt>Misc</dt>
-                                <dd>
-                                    Sales, teamwork, customer service, retail, cash handling, time management, high pressure environments.
-                                </dd>
-                            </dl>
-                            <hr/>
-                        </div>
-                    </div>
+                    <div class="row" id="skills-section"></div>
 
                     <!-- Work Experience -->
                     <a name="work"></a>
-                    <div class="row">
-                        <div class="col-md-11">
-
-                            <h2>Work Experience</h2>
-                            <dl>
-                                <dt>August 2014 to March 2015: The Gap, 260 Yonge Street, Toronto, Ontario</dt>
-                                <dd>Worked as a sales associate. Tasks include greeting, relating and engaging with the customer, keeping
-            the merchandise organized, and retrieving products from stock when necessary.</dd>
-                                <dt>June 2012 to July 2013: McDonald&#39;s, 980 Dundas Street, Woodstock, Ontario</dt>
-                                <dd>Worked at the front counter and drive-thru. Tasks include taking food orders, money handling, working with other crew members, managing time, prioritizing orders, and communicating with customers.</dd>
-                            </dl>
-                            <hr/>
-                        </div>
-                    </div>
+                    <div class="row" id="work-section"></div>
 
                     <!-- Volunteering -->
                     <a name="volunteering"></a>
-                    <div class="row">
-                        <div class="col-md-11">
-
-                            <h2>Volunteering</h2>
-                            <dl class="dl-horizontal">
-                                <dt>2012-2013</dt>
-                                <dd>Organized two community dances at Ecole Secondaire Notre Dame for junior high students in Woodstock, Ontario.</dd>
-
-                                <dt>May 2012</dt>
-                                <dd>Participated in a humanitarian trip to Guatemala. Organized with the High Skills Major program in non-profit at Ecole Secondaire Notre Dame. The goal of the trip was to promote personal hygiene and build outdoor latrines in the rural community of Chichicastenango, Guatemala.</dd>
-
-                                <dt>April 2012</dt>
-                                <dd>Selected within Conseil scolaire catholique Providence &#40;school board&#41; to participate in Experience Dominicaine: A humanitarian trip to the Dominican Republic with the goal of understanding the lives of those living in Third World countries. Also responsible for amassing sandals for those in need in the Dominican Republic. Performed manual labour alongside families; mostly local sugar cane farmers, in order to comprehend the economic disparities existing within the rural areas of Santo Domingo, Dominican Republic.</dd>
-                            </dl>
-                            <hr/>
-                        </div>
-                    </div>
+                    <div class="row" id="volunteering-section"></div>
 
                     <!-- Awards and bursaries -->
                     <a name="awards"></a>
-                    <div class="row">
-                        <div class="col-md-11">
-
-                            <h2>Awards &amp; Bursaries</h2>
-                            <h4>Secondary School Bursaries</h4>
-                            <ul>
-                                <li>$250 CSDECSO &#45; Postsecondary education to
-                                    university</li>
-                                <li>$200 Lefler Bursary &#45; Data Management</li>
-                                <li>$200 Lefler Bursary &#45; Advanced Functions 4U</li>
-                                <li>$100 Voegelin Bursary &#45; Mathematics</li>
-                                <li>$100 High Skills Major Bursary</li>
-                                <li>$100 Agribrands Purina Canada Ltd. Bursary</li>
-                                <li>$100 DeSerres Bursary &#45; Highest mark in French</li>
-                            </ul>
-                        </div>
-                    </div>
-
+                    <div class="row" id="awards-section"></div>
+                    
                 </div>
             </div>
         </div>
